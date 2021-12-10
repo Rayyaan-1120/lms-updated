@@ -1,0 +1,203 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
+
+:root {
+  --green-color: #006838;
+  --white-color: #ffffff;
+  /* font-family: "Poppins", sans-serif; */
+
+  --segoe-family: "Poppins", sans-serif;
+  --custom-spacing: 3px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: var(--segoe-family) !important;
+  background-color: var(--green-color);
+}
+
+.containerr {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 2px solid brown; */
+}
+.mainBox {
+  width: 100%;
+  /* border: 2px solid lime; */
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.image {
+  width: 300px;
+  margin: 5px;
+  position: relative;
+  opacity: 0;
+  top: -100px;
+  visibility: collapse;
+  transition: all 1.5s ease;
+}
+.imageAnimation {
+  top: 0;
+  visibility: visible;
+  opacity: 1;
+}
+.form {
+  /* border: 2px solid black; */
+  margin: 5px;
+  width: 380px;
+  padding: 8px;
+  background-color: var(--white-color);
+}
+
+main > .form > .heading {
+  padding: 10px;
+  border-bottom: 2px dashed var(--green-color);
+}
+
+main > .form > .heading > h2 {
+  font-family: cursive;
+  font-weight: 600;
+  text-align: center;
+  /* letter-spacing: var(--custom-spacing); */
+  color: var(--green-color);
+}
+
+main > .form > form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* border: 2px solid pink; */
+}
+
+main > .form > form > label {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  /* margin-top: 50px; */
+  margin: 20px 0;
+  border-radius: 5px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+}
+
+main > .form > form > label > .icon {
+  /* width: 5%; */
+  margin: 0 5px;
+}
+
+main > .form > form > label > .icon > i {
+  color: var(--green-color);
+}
+
+main > .form > form > label > input {
+  width: 100%;
+  font-size: 16px;
+  border: 2px solid transparent;
+  outline: none;
+  margin-left: 10px;
+  font-family: var(--segoe-family);
+}
+
+main > .form > form > input[type="submit"] {
+  display: block;
+  margin: 0 auto;
+  width: 50%;
+  padding: 10px;
+  color: var(--white-color);
+  /* background-color: var(--green-color); */
+  background-color: #348f50;
+  border: 2px solid transparent;
+  outline: none;
+  font-size: 15px;
+  font-weight: 600;
+  /* letter-spacing: var(--custom-spacing); */
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  transition: 0.4s all;
+}
+
+main > .form > form > input[type="submit"]:hover {
+  cursor: pointer;
+  /* color: var(--green-color); */
+  color: white;
+  /* background-color: transparent; */
+  background-color: var(--green-color);
+  /* border: 2px solid var(--green-color); */
+  transform: translateY(-3px);
+}
+/* Password change */
+.main {
+  display: flex;
+}
+
+.main1 {
+  width: 50%;
+  padding: 60px;
+}
+.maindiv {
+  text-align: center;
+  width: 70%;
+  margin: auto;
+  margin-top: 120px;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 10px 5px 10px 2px gray;
+}
+.main2 {
+  width: 50%;
+  padding: 25px;
+}
+
+.input {
+  width: 100%;
+  font-size: medium;
+  padding: 5px;
+  border: none;
+  border-bottom: 2px solid gray;
+  outline: none;
+}
+.head {
+  margin-top: 20px;
+}
+
+.input1 {
+  width: 100%;
+  font-size: medium;
+
+  border: none;
+  border-bottom: 2px solid gray;
+  outline: none;
+  margin-top: 30px;
+}
+
+.btns {
+  width: 100%;
+  background-color: #006633;
+  color: white;
+  margin-top: 40px;
+  height: 40px;
+  border-radius: 10px;
+  border: none;
+}
+
+body {
+  background-color: #f2f2f2;
+}
+
+html::-webkit-scrollbar {
+  width: 7px; /* width of the entire scrollbar */
+}
+html::-webkit-scrollbar-track {
+  background: #fff; /* color of the tracking area */
+}
+html::-webkit-scrollbar-thumb {
+  background-color: #006838; /* color of the scroll thumb */
+}

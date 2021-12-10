@@ -1,0 +1,344 @@
+/* Banner */
+.banner-container {
+  background-image: url("../../images/homebanner.jpeg");
+  width: 100%;
+  /* height: 300px; */
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* border: 1px solid red; */
+}
+.heading-text {
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: underline;
+}
+.sub-heading-text {
+  color: #ffffff;
+  font-size: 25px;
+  margin-top: 40px;
+}
+.para-text {
+  color: #ffffff;
+  font-size: 20px;
+  width: 98%;
+}
+
+/* Cards */
+/* .card-container-custom{
+    
+      } */
+
+.cardCourse {
+  width: 25%;
+}
+
+/* Events  */
+
+.card-container {
+  height: 260px;
+  width: 300px;
+}
+.inst-heading {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+
+
+/* Message Section */
+.message-container {
+  width: 1000px;
+  height: auto;
+  margin: 0 auto;
+  padding-left: 30px;
+}
+.main-message-text-container {
+  border: 1px solid gray;
+  padding: 20px;
+}
+.message-text-container {
+  border: 1px solid gray;
+  border-top-left-radius: 80px;
+  padding: 30px;
+}
+
+/* footer */
+.custom-footer {
+  width: 100% !important;
+}
+li {
+  list-style: none;
+}
+.main-footer1 {
+  color: #ffffff;
+}
+.main-footer {
+  color: #ffffff;
+  background-color: "black";
+}
+.footer-title-margin{
+ margin-left: 12%;
+}
+
+/* ABOUT SECTION */
+
+.about-div {
+  display: flex;
+  width: 90%;
+  margin-left: 5%;
+}
+.about-pic {
+  width: 40%;
+  margin-top: 50px;
+  height: 100px;
+}
+
+.about-para {
+  width: 40%;
+  margin-left: 10%;
+  margin-top: 50px;
+  font-size: 20px;
+}
+
+.section-title {
+  color: #006838;
+}
+.img-about {
+  height: 300px;
+}
+
+.custom-course-style {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: "100%";
+  padding: 0;
+  margin-top: 0;
+  height: auto;
+}
+.custom-card {
+  height: auto;
+  width: 25%;
+  margin-top: 30px;
+}
+.card-img-custom {
+  width: 100%;
+}
+
+@media (max-width: 1100px) {
+  .about-para {
+    font-size: 12px;
+  }
+
+  .img-about {
+    height: 200px;
+  }
+}
+
+@media (max-width: 650px) {
+  .section-title {
+    color: #006838;
+    font-size: 20px;
+  }
+  .banner-container {
+    background-size: cover;
+    width: 100%;
+    /* height: 400px; */
+  }
+
+  .heading-text,
+  .sub-heading-text {
+    font-size: 12px;
+  }
+  .sub-heading-text {
+    margin-top: 10px;
+  }
+  .para-text {
+    font-size: 10px;
+  }
+
+  /* Cards Section */
+
+  .cardCourse {
+    width: 80%;
+    height: 250px;
+    margin-bottom: 10px;
+    font-size: 8px;
+  }
+  .card-title-custom{
+      font-size: 10px !important;
+  }
+  /* ABOUT US  */
+  .about-div {
+    display: inline-flex;
+  }
+
+  .about-pic {
+    width: 40%;
+    height: 400px;
+    margin-top: 10px;
+  }
+  .img-about {
+    height: auto;
+    width: 90%;
+    margin-bottom: 0px;
+  }
+  .about-para {
+    font-size: 8px;
+    width: 90%;
+    padding: 10px;
+
+    justify-content: center;
+    margin-left: 0%;
+    margin-bottom: 0%;
+    margin-top: 0%;
+  }
+  .custom-mobile {
+    height: 400px;
+  }
+  .align-item {
+    display: flex;
+    flex-direction: column;
+
+    height: 380px;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* Courses */
+  .custom-course-style {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+    width: "100%";
+    padding: 0;
+    margin-top: 0;
+    height: 830px;
+  }
+  .custom-card {
+    height: auto;
+    width: 80%;
+    margin-top: 30px;
+  }
+  .card-img-custom {
+    width: 100%;
+  }
+
+  /* Events */
+  .custom-btn {
+    font-size: 30px !important;
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+    padding:0 !important;
+    
+    /* margin: 0 !important; */
+  }
+  .cor-container{
+
+    width: 80%;
+    height: 80%;
+    margin-left:8% !important;
+    padding: 4% !important;
+  }
+  .message-title-container{
+    margin-bottom: 30px;
+  }
+  .cor-container1{
+   
+    margin-left: 10 !important;
+  }
+    
+  .card-custom{
+
+    width: 100% !important;
+    height: 100%;
+    padding: 0% !important;
+    margin: 0% !important;
+  }
+  .img-container{
+    width: 100%;
+    height: 70%;
+    background-size: contain;
+  }
+  .inst-heading{
+ font-weight: normal;
+ margin-top: 5px;
+ font-size: 20px;
+  }
+
+      /* Message Section */
+      .message-container{
+        width: 90%;
+        margin: 0%;
+      }
+      .message-heading{
+        font-size: 15px !important;
+       
+      }
+      .message-text{
+        font-size: 10px;
+      }
+      .main-message-text-container {
+        border: 1px solid gray;
+        padding: 5px;
+      }
+      .message-text-container{
+        padding: 20px;
+      }
+      .messsage-img-container{
+        background-color: black;
+        padding: 0%;
+        width: 100%;
+      }
+      .message-img{
+        margin-top: 10px;
+        width: 100%;
+        margin-left: 0;
+      
+      }
+
+/* footer */
+.custom-footer {
+  background-color: 'green' !important;
+  width: 100% !important;
+  display: flex;
+  flex-direction: column;
+  padding-top: 5%;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.footer-img{
+  width: 60%;
+  margin-bottom: 5%;
+}
+/* .cus-1{
+  width: 200px !important;
+ 
+  margin: 0%;
+} */
+.footer-title{
+  font-size: 15px;
+}
+.footer-item-align{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 0%;
+  padding: 0%;
+}
+/* .input-container{
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  align-items: center;
+  justify-content: center;
+} */
+}

@@ -1,0 +1,54 @@
+#data {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 95%;
+}
+
+#data td,
+#data th {
+  border: 1px solid #ddd;
+  padding: 8px;
+  font-size: 13px;
+}
+
+#data tr:nth-child(even) {
+  /* background-color: #f2f2f2; */
+}
+
+#data tr:hover {
+  background-color: #ddd;
+}
+
+#data th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  /* background-color: #04aa6d; */
+  color: black;
+}
+.modal-title {
+  font-size: 30px;
+}
+.modal-body {
+  display: flex;
+  flex-direction: column;
+}
+.modal-body p {
+  border: 1px solid rgb(145, 142, 123);
+  border-radius: 7px;
+  padding: 10px;
+  font-size: 18px;
+  color: darkslategrey;
+  margin: 20px;
+}
+
+.modal-body span {
+  color: darkgreen;
+  font-size: 25;
+}
+.modal-body img {
+  width: 150px;
+  height: 150px;
+  align-self: center;
+  border-radius: 200px;
+}

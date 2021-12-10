@@ -1,0 +1,8 @@
+
+@media (min-width: 100px) and (max-width: 600px) {
+    .pdf-res-msg{
+        width: 90% !important;
+        height: 90% !important;
+    }
+
+}

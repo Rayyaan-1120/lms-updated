@@ -1,0 +1,15 @@
+@media (max-width: 575.98px) {
+  .sidebar-banner-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .banner-img1 {
+    display: block;
+  }
+}
+
+@media (min-width: 575.98px) {
+  .banner-img1 {
+    display: none;
+  }
+}

@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
+
+:root {
+  --green-color: #006838;
+  --white-color: #ffffff;
+  --segoe-family: "Source Sans Pro", sans-serif;
+  --custom-spacing: 3px;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.cardbanBox{
+    max-width: 250px;
+    border: 1px solid lightgrey;
+    border-radius: 5px 5px 0 0 ;
+    padding: 5px;
+    box-shadow: 5px 5px 5px lightgrey;
+    margin: 10px;
+}
+.cardBanImg{
+    width: 100%;
+
+}
+.cardbanBox img{
+    border-radius: 5px 5px 0 0 ;
+    width: 100%;
+
+}
+.cardBanDesBOx{
+    width: 100%;
+
+}
+
+.cardBanDes{
+        border-bottom: 1px solid lightgrey;
+        padding: 7px;
+        display: flex;
+        justify-content: space-around;
+}
+.cardBanDes span{
+    color: green;
+    font-weight: 600;
+}
+.cardBanDes small{
+    font-weight: bold;
+}
+
+.cardBanDesBOx button{
+    padding: 4px;
+    outline: none;
+    border: none;
+    background-color: #348F50;
+    /* margin: 10px 0; */
+    display: block;
+    margin: 10px auto;
+    border-radius: 8px;
+    color: white;
+    font-family: cursive;
+}
+.cardBanDesBOx button:hover{
+    cursor: pointer;
+    /* color: var(--green-color); */
+    color: white;
+    /* background-color: transparent; */
+    background-color: var(--green-color);
+    /* border: 2px solid var(--green-color); */
+    transform: translateY(-3px);
+}

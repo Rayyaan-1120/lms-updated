@@ -1,0 +1,693 @@
+.main-panel {
+  width: 100% !important;
+}
+
+.modal-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  /* opacity: 0;
+    transition: visibility 0s, opacity 0.5s; */
+  z-index: 1;
+}
+
+.modal-bg > .modal {
+  position: relative;
+  background-color: #006864 !important;
+  width: 50%;
+  height: 30%;
+  padding: 50px 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 20px !important;
+}
+
+.modal-bg > .modal > .instruction {
+  width: 100%;
+  color: #fff;
+}
+
+.modal-bg > .modal > .instruction > ul {
+  /* list-style-type: circle !important; */
+  padding: 0 10px;
+}
+
+.modal-bg > .modal > .instruction > ul > li {
+  padding: 0 20px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.modal-bg > .modal > form {
+  width: 100%;
+  margin-top: -20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-bg > .modal > form > input {
+  font-size: 16px;
+  margin: 10px 0 5px !important;
+  text-align: center;
+  padding: 6px;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid #000;
+}
+
+.modal-bg > .modal > form > button {
+  border: 2px solid #fff;
+  outline: none;
+  color: #fff;
+  padding: 5px 25px;
+  border-radius: 10px;
+  background-color: transparent;
+  transition: 0.4s all;
+}
+
+.modal-bg > .modal > form > button:hover {
+  cursor: pointer;
+  transform: translateY(-2px);
+}
+
+.modal-bg > .modal > .modal-close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #fff;
+}
+
+.bg-active {
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+span {
+  cursor: pointer;
+}
+
+/* lists */
+
+/* modal */
+
+.asnwers > .modal-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.4s all;
+}
+
+.asnwers > .modal-bg > .modal {
+  position: relative;
+  background-color: white !important;
+  width: 70%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.asnwers > .modal-bg > .modal > .lists {
+  width: 80%;
+  height: 85%;
+  overflow: auto;
+}
+
+.asnwers > .modal-bg > .modal > .lists > ul > li {
+  display: flex;
+  flex-direction: column;
+}
+
+.asnwers > .modal-bg > .modal > .lists > ul > li + hr {
+  padding: 10px 0;
+  color: #006838;
+}
+
+.asnwers > .modal-bg > .modal > .lists > ul > li.question {
+  border-bottom: 2px solid #006860;
+}
+
+.asnwers > .modal-bg > .modal > .lists > ul > li > .one {
+  font-size: 30px;
+}
+
+.asnwers > .modal-bg > .modal > .lists > ul > li > div {
+  height: 70px;
+}
+
+.asnwers > .modal-bg > .modal > .lists > ul > li > div > h3 {
+  padding: 5px 10px 0;
+}
+
+/* .asnwers > .modal-bg
+      > .modal
+      > .lists
+      > ul
+      > li
+      > div
+      .lists > .modal-bg
+      > .modal
+      > .lists
+      > ul
+      > li
+      > div.wrongOption {
+      width: 100%;
+      color: #fff;
+      background-color: red;
+    } */
+
+div.wrongOption {
+  width: 100%;
+  color: #fff;
+  margin-top: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+div.wrongOption > h4 {
+  margin-top: 5px;
+  font-size: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+div.wrongOption > h4 > .title {
+  padding: 5px 40px;
+  background-color: red;
+}
+
+div.wrongOption > h4 > .text {
+  width: 100%;
+  color: red;
+  font-size: 18px;
+  padding: 0px 20px;
+  text-align: center;
+  background-color: transparent;
+}
+
+div.correctOption {
+  width: 100%;
+  color: #fff;
+  margin-top: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+div.correctOption > h4 {
+  margin-top: 5px;
+  font-size: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+div.correctOption > h4 > .title {
+  padding: 5px 40px;
+  background-color: #007e87;
+}
+
+div.correctOption > h4 > .text {
+  width: 100%;
+  color: #007e87;
+  font-size: 18px;
+  padding: 5px 20px;
+  text-align: center;
+  background-color: transparent;
+}
+
+.modal-bg > .modal > i {
+  position: absolute;
+  top: 20px;
+  right: 25px;
+  font-size: 20px;
+  color: #007e87;
+  transition: 0.4s all;
+}
+
+.modal-bg > .modal > i:hover {
+  cursor: pointer;
+  transform: rotate(360deg);
+}
+
+.display-none {
+  display: none;
+}
+
+.bg-active {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* end modal */
+
+/* end lists */
+
+.minorStyle {
+  width: 60% !important;
+  height: 400px !important;
+}
+
+.cardMainM {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* student portal  */
+@media (min-width: 100px) and (max-width: 800px) {
+  .main-quiz-home {
+    display: block !important;
+  }
+  .side-bar-res {
+    height: 80px !important;
+    width: 100% !important;
+  }
+  .side-text-res {
+    margin-left: 80px !important;
+  }
+  .std-text-res {
+    font-size: 20px !important;
+    text-align: center !important;
+  }
+  .std-image-res {
+    display: none !important;
+  }
+  .side-res {
+    background-color: transparent !important;
+  }
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.main-panel {
+  width: 100% !important;
+}
+
+.modal-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  /* opacity: 0;
+    transition: visibility 0s, opacity 0.5s; */
+  z-index: 1;
+}
+
+.modal-bg > .modal {
+  position: relative;
+  background-color: #006864 !important;
+  width: 50%;
+  height: 30%;
+  padding: 50px 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 20px !important;
+}
+
+.modal-bg > .modal > .instruction {
+  width: 100%;
+  color: #fff;
+}
+
+.modal-bg > .modal > .instruction > ul {
+  /* list-style-type: circle !important; */
+  padding: 0 10px;
+}
+
+.modal-bg > .modal > .instruction > ul > li {
+  padding: 0 20px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.modal-bg > .modal > form {
+  width: 100%;
+  margin-top: -20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-bg > .modal > form > input {
+  font-size: 16px;
+  margin: 10px 0 5px !important;
+  text-align: center;
+  padding: 6px;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid #000;
+}
+
+.modal-bg > .modal > form > button {
+  border: 2px solid #fff;
+  outline: none;
+  color: #fff;
+  padding: 5px 25px;
+  border-radius: 10px;
+  background-color: transparent;
+  transition: 0.4s all;
+}
+
+.modal-bg > .modal > form > button:hover {
+  cursor: pointer;
+  transform: translateY(-2px);
+}
+
+.modal-bg > .modal > .modal-close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #fff;
+}
+
+.bg-active {
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+span {
+  cursor: pointer;
+}
+
+/* lists */
+
+/* modal */
+
+.asnwers > .modal-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.4s all;
+}
+
+.asnwers > .modal-bg > .modal {
+  position: relative;
+  background-color: white !important;
+  width: 70%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.asnwers > .modal-bg > .modal > .lists {
+  width: 80%;
+  height: 85%;
+  overflow: auto;
+}
+
+.asnwers > .modal-bg > .modal > .lists > ul > li {
+  display: flex;
+  flex-direction: column;
+}
+
+.asnwers > .modal-bg > .modal > .lists > ul > li + hr {
+  padding: 10px 0;
+  color: #006838;
+}
+
+.asnwers > .modal-bg > .modal > .lists > ul > li.question {
+  border-bottom: 2px solid #006860;
+}
+
+.asnwers > .modal-bg > .modal > .lists > ul > li > .one {
+  font-size: 30px;
+}
+
+.asnwers > .modal-bg > .modal > .lists > ul > li > div {
+  height: 70px;
+}
+
+.asnwers > .modal-bg > .modal > .lists > ul > li > div > h3 {
+  padding: 5px 10px 0;
+}
+
+/* .asnwers > .modal-bg
+      > .modal
+      > .lists
+      > ul
+      > li
+      > div
+      .lists > .modal-bg
+      > .modal
+      > .lists
+      > ul
+      > li
+      > div.wrongOption {
+      width: 100%;
+      color: #fff;
+      background-color: red;
+    } */
+
+div.wrongOption {
+  width: 100%;
+  color: #fff;
+  margin-top: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+div.wrongOption > h4 {
+  margin-top: 5px;
+  font-size: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+div.wrongOption > h4 > .title {
+  padding: 5px 40px;
+  background-color: red;
+}
+
+div.wrongOption > h4 > .text {
+  width: 100%;
+  color: red;
+  font-size: 18px;
+  padding: 0px 20px;
+  text-align: center;
+  background-color: transparent;
+}
+
+div.correctOption {
+  width: 100%;
+  color: #fff;
+  margin-top: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+div.correctOption > h4 {
+  margin-top: 5px;
+  font-size: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+div.correctOption > h4 > .title {
+  padding: 5px 40px;
+  background-color: #007e87;
+}
+
+div.correctOption > h4 > .text {
+  width: 100%;
+  color: #007e87;
+  font-size: 18px;
+  padding: 5px 20px;
+  text-align: center;
+  background-color: transparent;
+}
+
+.modal-bg > .modal > i {
+  position: absolute;
+  top: 20px;
+  right: 25px;
+  font-size: 20px;
+  color: #007e87;
+  transition: 0.4s all;
+}
+
+.modal-bg > .modal > i:hover {
+  cursor: pointer;
+  transform: rotate(360deg);
+}
+
+.display-none {
+  display: none;
+}
+
+.bg-active {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* end modal */
+
+/* end lists */
+
+.minorStyle {
+  width: 60% !important;
+  height: 400px !important;
+}
+
+.cardMainM {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* student portal  */
+@media (min-width: 100px) and (max-width: 800px) {
+  .main-quiz-home {
+    display: block !important;
+  }
+  .side-bar-res {
+    height: 80px !important;
+    width: 100% !important;
+  }
+  .side-text-res {
+    margin-left: 80px !important;
+  }
+  .std-text-res {
+    font-size: 20px !important;
+    text-align: center !important;
+  }
+  .std-image-res {
+    display: none !important;
+  }
+  .side-res {
+    background-color: transparent !important;
+  }
+}
+
+
+.oldResultUI{
+  display: none;
+}
+
+.resultMainBox{
+    width: 100%;
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    min-height: 100vh;
+  }
+
+.resultInnerBox{
+      margin: 10px;
+      /* border: 1px solid lightgray; */
+      box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+      width: 50%;
+      /* padding: 8px; */
+    }
+.resultInnerBox header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  border-bottom: 1px solid lightgray;
+  padding: 5px 0;
+  margin: 5px 0;
+  background-color: #348F50;
+  padding: 8px;
+}
+.resultInnerBox header img{
+    width: 60px;
+    border-radius: 50%;
+    
+}
+.resultInnerBox header h5{
+  margin: 0;
+  color: white;
+  font-family: cursive;
+}
+.resultInnerBox section , .resultInnerBox section table  {
+  width: 100%;
+  padding: 8px;
+}
+.resultInnerBox section table tr{
+  width: 100%;
+  border-bottom: 1px solid lightgray;
+
+}
+
+.resultInnerBox section table tr td{
+  padding: 8px;
+}
+
+.resultInnerBox section table tr:nth-child(odd){
+  background-color: #f5f7ff;
+}
+
+.resultInnerBox footer{
+  display: flex;
+  justify-content: flex-end;
+  margin: 10px 0;
+  padding: 8px;
+}
+.resultInnerBox footer button{
+  padding: 5px;
+      border: none;
+      outline: none;
+      background-color: #348F50;
+      color: white;
+      font-family: cursive;
+    border-radius: 5px;
+    font-size: small;
+    
+}
+.resultInnerBox footer button:hover{
+  background-color: var(--green-color);
+
+}
+
+@media only screen and (max-width:780px){
+  .resultInnerBox{
+    width: 70%;
+  }
+}
+@media only screen and (max-width:500px){
+  .resultInnerBox{
+    width: 80%;
+  }
+}

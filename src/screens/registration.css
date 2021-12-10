@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+  /* font-family: "Roboto", sans-serif; */
+}
+#inputState,
+#inputEmail4 {
+  border: none;
+  border-bottom: 1px solid #006838;
+  background-color: transparent;
+  outline: none;
+  padding: 5px;
+  width: 100%;
+  color: black;
+  font-size: 16px;
+}
+
+@media (max-width: 1100px) {
+  label {
+    font-size: 12px;
+  }
+}
+@media (min-width: 767px) and (max-width: 1400px) {
+  .butt {
+    font-size: 17px !important;
+    height: 60px !important;
+  }
+}
+
+@media (max-width: 600px) {
+  label {
+    font-size: 16px;
+  }
+  .form-con {
+    margin: 30px 0;
+  }
+  .form-main {
+    width: 90% !important;
+  }
+  .butt {
+    width: 200px !important;
+    margin-left: -80px !important;
+  }
+  .error-res {
+    display: block !important;
+  }
+  .load {
+    margin-right: 30px !important;
+  }
+  .logo-res {
+    width: 180px !important;
+  }
+  .form-main-sub {
+    width: 90% !important;
+    padding: 10px !important;
+  }
+  .msgFormsub {
+    font-size: 18px !important;
+
+    text-align: left;
+  }
+  .li-text {
+    font-size: 15px !important;
+  }
+  .logo-submit {
+    display: flex;
+    justify-content: center;
+  }
+  .captcha-res {
+    margin-left: -10px !important;
+  }
+}

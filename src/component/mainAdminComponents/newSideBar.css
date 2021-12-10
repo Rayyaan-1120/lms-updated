@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.SidemainBox {
+  width: 250px;
+  min-height: 100%;
+  background-color: white;
+  transition: 0.8s all ease;
+}
+.SidemainBox.hide {
+  width: 60px;
+}
+.sideList {
+  width: 100%;
+  padding: 5px 15px;
+  color: green;
+}
+.sideList li {
+  width: 100%;
+  margin: 20px 0;
+  padding: 8px;
+  font-size: small;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.sideList span {
+  padding: 0 10px;
+  color: black;
+}
+.sideListHide span {
+  display: none;
+}
+.sideBArBtn {
+  padding: 5px 15px;
+  color: green;
+  font-size: 25px;
+}

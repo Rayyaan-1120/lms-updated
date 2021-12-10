@@ -1,0 +1,57 @@
+
+@media (min-width: 100px) and (max-width: 600px) {
+    .pdf-res-msg{
+        width: 90% !important;
+        height: 90% !important;
+    }
+
+
+}
+
+.pdfDiv{
+    width: "200%";
+    height: "200%";
+    position: fixed;
+    background-color: #fff;
+    z-index: 9;
+    display: flex;
+    justify-content: center;
+
+}
+
+@media(min-width: 100px) and (max-width: 600px){
+    .mainDiv{
+        display: block;
+        justify-content: center;
+        }
+        .pdfDiv{
+            z-index: -9;
+            display: none;
+            visibility: hidden;
+        }
+}
+
+@media(min-width:1400px){
+    /* .mainDiv{
+        display: flex;
+        justify-content: center;
+    } */
+    /* .pdfSecondBtn{
+        display: none;
+        visibility: hidden;
+        z-index: -9;
+    } */
+
+.pdfDiv{
+    width: "200%";
+    height: "200%";
+    position: fixed;
+    background-color: #fff;
+    z-index: 9;
+    display: flex;
+    justify-content: center;
+    width: 90% !important;
+    height: 100% !important;
+
+}
+}

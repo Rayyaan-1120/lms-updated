@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.courseHeading{
+    color: #348F50;
+    /* width: 100%; */
+    margin: 20px 5px;
+    text-align: center;
+        
+}
+.courseHeading h4{
+    width: 100%;
+    margin: 0;
+}
+.attendanceBox{
+    width: 90%;
+    border: 2px solid lightgray;
+    margin: 20px auto;
+}
+.attendanceBoxHeader{
+    color: white;
+    text-align: center;
+    background-color: #348F50;
+    padding: 8px;
+}
+.attendanceBoxHeader h4{
+    margin: 0;
+}
+.attendanceBoxBody{
+        /* width: 100%; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 8px;
+        border-bottom: 2px solid lightgray;
+
+}
+.attendanceBoxBody h4{
+    color: grey;
+    margin: 10px 0;
+}
+.mytable{
+    /* border: 2px solid black; */
+    /* width: 100%;     */
+    border-spacing: 5px 10px ;
+    border-collapse: separate; 
+    /* width: 80%; */
+
+}
+.attendanceBoxBody{
+    width: 100%;
+}
+
+
+.attendanceBoxBody td{
+    /* border:1px solid red; */
+    padding: 8px;
+    text-align: center;
+    width: 220px;
+    /* box-shadow: 2px 2px 5px lightgray; */
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    
+}
+.checkMark{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.checkMark input{
+    margin: 0 3px;
+}
+
+.attendanceBoxBody td:first-child{
+    background-color: #348F50;
+    color: white;
+    font-weight: 600;
+}
+
+
+.attendanceBoxFooter{
+    width: 100%;
+    padding: 8px;
+    display: flex;
+    justify-content: center ;
+}
+.attendanceBoxFooter button{
+    background-color: #348F50;
+    width: 120px;
+    color: white;   
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    padding: 8px;
+}
+@media only screen and (max-width:385px){
+    .attendanceBoxBody td{
+        max-width: 150px;
+    }
+}
