@@ -11,22 +11,58 @@ function Stdassignmentsstatus({ data, course, batch,assignmentName,maxmarks,id }
 
     const [show,setshow] = useState(false)
     const [input,setinput] = useState(0)
+    const [stddtata,setstddata] = useState({})
 
     
-    console.log(input)
 
     const findstddata = (rollNo) => {
-
-
       setshow(true)
       const filterate = data.find(entry => entry.rollNo === rollNo)
-      
-
+      setstddata(filterate)
     }
 
   return (
       <>
-      
+      {stddtata != {} && (
+        <Modal
+      visible={show}
+      width="500"
+      height="300"
+      effect="fadeInDown"
+      onClickAway={() => {
+          setshow(false)
+  
+      }}
+      >
+
+       <div className={styles.secondmodal}>
+           <h2>assignment link</h2>
+           <div>
+           <input type="text" value={stddtata.assignmentLink}/>
+           </div>
+           <h2>Marks</h2>
+           <div>
+           <input type="number" onChange={(e) => {
+             
+             setinput(e.target.value)
+            
+             }} value={input} required max={Number(maxmarks)}/>
+           </div>
+           <div>
+               <button className={styles.btn} onClick={() => {
+                 if(Number(input) > Number(maxmarks)){
+                   alert('you have entered wrong value')
+                   return
+                 }
+                 dispatch(givestdmarks(id,stddtata.rollNo,stddtata.obtainMarks=input,assignmentName))
+                console.log(stddtata.rollNo)
+              }}>Submit marks</button>
+           </div>
+       </div>
+      </Modal>
+      )}
+     
+
       
     <div className={styles.mainmodal}>
       <div className={styles.stdgreendiv}>
@@ -39,44 +75,14 @@ function Stdassignmentsstatus({ data, course, batch,assignmentName,maxmarks,id }
           return (
               <>
               
-            <Modal
-            visible={show}
-            width="500"
-            height="300"
-            effect="fadeInDown"
-            onClickAway={() => {
-                setshow(false)
-        
-            }}
-            >
-      
-             <div className={styles.secondmodal}>
-                 <h2>assignment link</h2>
-                 <div>
-                 <input type="text" value={entry.assignmentLink}/>
-                 </div>
-                 <h2>Marks</h2>
-                 <div>
-                 <input type="number" onChange={(e) => {
-                   
-                   setinput(e.target.value)
-                  
-                   }} value={input} required max={Number(maxmarks)}/>
-                 </div>
-                 <div>
-                     <button className={styles.btn} onClick={() => {dispatch(givestdmarks(id,entry.rollNo,entry.obtainMarks=input,assignmentName))
-                      console.log(entry.rollNo)
-                    }}>Submit marks</button>
-                 </div>
-             </div>
-            </Modal>
+           
             <div key={i} className={styles.stdwhitediv}>
               <div>
                 <h5>{entry.stdName}</h5>
               </div>
               <div className={styles.editicon}>
                 <h5>{entry.rollNo}</h5>
-                <FaEdit onClick={() => setshow(true)}/>
+                <FaEdit onClick={() => findstddata(entry.rollNo)}/>
 
               </div>
 

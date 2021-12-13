@@ -7,7 +7,8 @@ const initial_state = {
   singleassignment: [],
   adminassignment: [],
   adminsingleassignment: [],
-  filteredassignment:[]
+  filteredassignment:[],
+  toaststate:false
 };
 
 const assignmentreducer = (state = initial_state, action) => {
@@ -66,9 +67,9 @@ const assignmentreducer = (state = initial_state, action) => {
     case 'GIVE_STD_MARKS':
         return {...state,loading:true}
     case 'GIVE_STD_MARKS_SUCCESS':
-          return {...state,loading:false}
+          return {...state,loading:false,toaststate:true}
           case 'GIVE_STD_MARKS_ERROR':
-            return {...state,loading:false,error:true}
+            return {...state,loading:false,error:true,toaststate:true}
     default:
       return { ...state };
   }

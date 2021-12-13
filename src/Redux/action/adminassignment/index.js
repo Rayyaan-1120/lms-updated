@@ -1,4 +1,5 @@
 import axios from "axios";
+import { toast } from "react-toastify";
 
 const api = "https://jawan-tech-backend.herokuapp.com/";
 
@@ -64,9 +65,11 @@ const givestdmarks =
     axios(options).then((res) => {
         console.log(res)
         dispatch({type:'GIVE_STD_MARKS_SUCCESS'})
-        alert('data has been updated')
+        toast('data has been updated')
     })
-      .catch((err) => dispatch({ type: "GIVE_STD_MARKS_ERROR" }));
+      .catch((err) =>{ dispatch({ type: "GIVE_STD_MARKS_ERROR" })
+      toast('there is an error')
+    });
   };
 export {
   getadminallassignments,

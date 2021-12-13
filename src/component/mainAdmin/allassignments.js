@@ -13,6 +13,8 @@ import { FaEye } from "react-icons/fa";
 import Modal from "react-awesome-modal";
 import Stdassignmentsstatus from "./stdassignmentsstatus";
 import AppDropDown from "../../component/regStdData/dropDown";
+import Toasti from "../toast";
+
 
 // localhost:5000/assignment/stdmarkass
 
@@ -32,7 +34,7 @@ export default function Allassignments() {
 
   const [visible, setvisible] = useState(false);
   const dispatch = useDispatch();
-  const { error, loading, adminassignment, adminsingleassignment,filteredassignment } =
+  const { error, loading, adminassignment, adminsingleassignment,filteredassignment,toaststate } =
     useSelector((state) => state.assignmentreducer);
 
   const openmodal = (id) => {
@@ -64,6 +66,7 @@ export default function Allassignments() {
 
   return (
     <>
+    <Toasti toaststate={toaststate}/>
       <Modal
         visible={visible}
         width="850"
@@ -269,8 +272,8 @@ export default function Allassignments() {
                 <h6>assignment deadline</h6>
               </div>
               {loading && (
-                <div >
-                <div className="spinner-border" role="status" style={{width:'100%',alignItems:'center',justifyContent:'center',background:'red',height:'100vh'}}>
+                <div style={{width:'100%',display:'flex',alignItems:'center',justifyContent:'center',height:'80vh'}}>
+                <div className="spinner-border" role="status">
                   {/* <span className="visually-hidden"></span> */}
                 </div>
                 </div>
